@@ -47,7 +47,7 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	hit.emit()
-	$AnimatedSprite2D.animation = "hit"
+	$AnimatedSprite2D.animation = "dead"
 	OS.delay_msec(300)
 	hide() # Player disappears after being hit.
 	# Must be deferred as we can't change physics properties on a physics callback.

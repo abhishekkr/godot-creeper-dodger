@@ -55,8 +55,8 @@ metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_b2fvj")
-animation = &"dead"
-frame_progress = 0.383003
+animation = &"up"
+frame_progress = 0.299171
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_rfhbt")

@@ -45,11 +45,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_240wh"]
-radius = 45.3333
-height = 114.667
+radius = 40.0
+height = 113.333
 
 [node name="Mob" type="RigidBody2D"]
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.6, 0.6)
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_4jjhv")
@@ -57,10 +57,10 @@ metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-5.96046e-08, -2.66666)
-scale = Vector2(1.05199, 0.877193)
+scale = Vector2(1, 0.834)
 sprite_frames = SubResource("SpriteFrames_dff0b")
 animation = &"fly"
-frame_progress = 0.973333
+frame_progress = 0.916065
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
