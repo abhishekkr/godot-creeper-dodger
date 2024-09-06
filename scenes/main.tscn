@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dooig3oq1s885"]
+[gd_scene load_steps=7 format=3 uid="uid://dooig3oq1s885"]
 
 [ext_resource type="PackedScene" uid="uid://c3ievdorf0u2m" path="res://scenes/player.tscn" id="1_iso7e"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_yravt"]
 [ext_resource type="PackedScene" uid="uid://ml5ycf5hpthy" path="res://scenes/mob.tscn" id="2_wvbm4"]
 [ext_resource type="PackedScene" uid="uid://l2wx3ihygopf" path="res://scenes/hud.tscn" id="4_bi1li"]
+[ext_resource type="Texture2D" uid="uid://xcqu333txumu" path="res://art/pexels-photo-963436.jpeg" id="5_4r55v"]
 
 [sub_resource type="Curve2D" id="Curve2D_kp1r4"]
 _data = {
@@ -37,6 +38,14 @@ position = Vector2(-1, -1)
 rotation = 0.00208333
 
 [node name="HUD" parent="." instance=ExtResource("4_bi1li")]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -10
+offset_right = 480.0
+offset_bottom = 720.0
+texture = ExtResource("5_4r55v")
+expand_mode = 5
+stretch_mode = 3
 
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
